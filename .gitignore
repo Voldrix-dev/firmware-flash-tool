@@ -1,0 +1,81 @@
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ==========================================
+# Virtual environments
+# ==========================================
+.venv/
+firm_env/
+shienv/
+env/
+venv/
+
+# ==========================================
+# Runtime / user state (generated on first run)
+# ==========================================
+data/firmware_config.json
+data/config.json
+data/fw_deploy_config.json
+
+# Firmware binaries and runtime artifacts
+firm_file/*
+!firm_file/.gitkeep
+
+# ==========================================
+# Logs and temp files
+# ==========================================
+*.log
+*.inputlog
+logs/
+t.txt
+
+# ==========================================
+# Old / unused sources
+# ==========================================
+old/
+corp_uuu_tool_1.2.py
+corp_uuu_tool_v2.1.py
+fix_panel.py
+fix_panel2.py
+fix_panel3.py
+test_flash.py
+usb_test.py
+
+# Old launcher / desktop leftovers
+firm.sh
+Firware_Flash_Tool.desktop
+
+# ==========================================
+# Binary libraries (installed via apt / system)
+# ==========================================
+lib/
+
+# ==========================================
+# Scratch / empty dirs
+# ==========================================
+scratch/
+.agents/
+
+# ==========================================
+# Old helper scripts (keep only requirements.txt)
+# ==========================================
+scripts/*
+!scripts/requirements.txt
+
+# ==========================================
+# OS / editor
+# ==========================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/

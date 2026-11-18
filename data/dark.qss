@@ -1,0 +1,129 @@
+/* --- Базовые настройки --- */
+QWidget {
+    background-color: #1e1e1e;
+    color: #ddd;
+    font-family: 'Arial';
+    font-size: 10pt;
+}
+
+/* --- Tooltip --- */
+QToolTip {
+    background-color: #2b2b2b;
+    color: #fff;
+    border: 1px solid #666;
+    border-radius: 4px;
+    padding: 4px;
+    font-family: 'Arial';
+    font-size: 9pt;
+}
+
+/* --- Frame --- */
+QFrame {
+    color: white;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: #222;
+}
+
+/* --- TextEdit --- */
+QTextEdit {
+    border: 1px solid #888;
+    border-radius: 6px;
+    padding: 2px;
+    background: #111;
+    color: #eee;
+}
+
+/* --- Button --- */
+QPushButton {
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 6px;
+    padding: 4px 4px;
+}
+QPushButton:hover {
+    background-color: #444;
+}
+QPushButton:pressed {
+    background-color: #222;
+    border: 1px solid #666;
+}
+
+QPushButton#all_button {
+    background: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+QPushButton#all_button:hover {
+    background: rgba(255, 255, 255, 20);
+    border-radius: 4px;
+}
+
+QPushButton#all_button:pressed {
+    background: rgba(255, 255, 255, 40);
+}
+
+/* --- LineEdit / ComboBox --- */
+QLineEdit, QComboBox {
+    background-color: #252525;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 2px;
+    color: #eee;
+}
+QComboBox QAbstractItemView {
+    background-color: #2b2b2b;
+    selection-background-color: #444;
+}
+
+/* --- ProgressBar --- */
+QProgressBar {
+    text-align: center;
+    border: 1px solid #666;
+    border-radius: 7px;
+    background: #222;
+    color: white;
+}
+QProgressBar::chunk {
+    background-color: green;
+    border-radius: 5px;
+}
+
+/* --- ScrollBar --- */
+QScrollBar:vertical {
+    border: none;
+    background: #111;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:vertical {
+    background: #555;
+    border-radius: 5px;
+    min-height: 20px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #777;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #111;
+    height: 10px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:horizontal {
+    background: #555;
+    border-radius: 5px;
+    min-width: 20px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: #777;
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
