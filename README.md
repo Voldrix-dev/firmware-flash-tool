@@ -4,6 +4,8 @@ Parallel flashing GUI for **NXP i.MX** boards via the [`uuu`](https://github.com
 
 Built with **PySide6** (Qt6).
 
+![Firmware Flash Tool](docs/screenshot.png)
+
 ## Features
 
 - Up to **10 flashing panels** (`D1`–`D10`) with individual USB paths.
