@@ -37,7 +37,7 @@ uuu_app/
 ├── ovl.py        # UsbDevicesOverlay, FileSettingsOverlay
 ├── ui.py         # ClickableLabel, RoundedProgressBar, PanelSignals
 ├── cfg.py        # пути, конфиг, QSS, калибровка прогресса
-├── qt.py         # алиас PyQt5
+├── qt.py         # алиас PySide6 (Signal/Slot)
 ├── util.py       # format_t, is_main_log_noise
 └── __init__.py
 ```
@@ -216,7 +216,7 @@ FB: reboot
 
 - **`ui.py`** — `ClickableLabel` (метка с сигналом `clicked`), `RoundedProgressBar` (скруглённый QProgressBar в QSS), `PanelSignals` (фасад Qt-сигналов из фоновых потоков в GUI).
 - **`util.py`** — `format_t(seconds)` (формат `HH:MM:SS`), `is_main_log_noise(line)` (фильтр шумовых строк `uuu`, которые не нужны оператору).
-- **`qt.py`** — единая точка импорта `PyQt5.QtCore/QtGui/QtWidgets`, чтобы не разъезжались версии.
+- **`qt.py`** — единая точка импорта `PySide6.QtCore/QtGui/QtWidgets`, чтобы не разъезжались версии.
 - **Иконки** — `qtawesome` (FontAwesome 5): `fa5s.sync-alt`, `fa5s.play`, `fa5s.stop`, `fa5s.folder-open`, `fa5s.sign-out-alt`, `fa5s.question`.
 
 ### 8. Полный сценарий оператора
